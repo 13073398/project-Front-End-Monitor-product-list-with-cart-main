@@ -1,0 +1,10 @@
+ User able to make th following (using Java script ) :
+ Add items to the cart and remove them
+ Increase/decrease the number of items in the cart
+ See an order confirmation modal when they click "Confirm Order"
+Reset their selections when they click "Start New Order"
+I get  the data for the products from  a local `data.json` file. 
+the data of products created dynamically  so we can add New products
+the following points made by using HTML&CSS 
+ View the optimal layout for the interface depending on their device's screen size  (using grid system from Bootstrap)
+- See hover and focus states for all interactive elements on the page .

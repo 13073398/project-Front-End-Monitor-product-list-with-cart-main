@@ -1,0 +1,612 @@
+
+/*  start colors */
+:root{
+    --red_color:hsl(14, 86%, 42%);
+    --green_color:hsl(159, 69%, 38%);
+    --rose_color_50:hsl(20, 50%, 98%);
+    --rose_color_100:hsl(13, 31%, 94%);
+    --rose_color_300: hsl(14, 25%, 72%);
+    --rose_color_400:hsl(7, 20%, 60%);
+    --rose_color_500:hsl(12, 20%, 44%);
+    --rose_color_900:hsl(14, 65%, 9%);
+    --font-size:16px;
+
+}
+/*  End colors */
+/* Start global  */
+body{
+    font-family: "Red Hat Text", sans-serif;
+}
+   
+*{
+    box-sizing :border-box ;
+    padding :0;
+    margin :0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul{
+list-style :none ;
+margin:0;
+padding :0;
+}
+/* :focus{
+    outline :none;
+} */
+a{
+    text-decoration :none ;
+}
+.container{
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 90%;
+    min-height: 90%;
+}
+@media (min-width:576px) and (max-width:1022px){
+    .desserts  .container{
+        max-width: 100%;
+  
+
+    }
+}
+.desserts  .cart.block{
+    display: block !important;
+}
+.desserts .cart.disable{
+    display:none;
+}
+.desserts .empty.disable{
+    display: none !important;
+}
+
+/* End global  */
+.desserts{
+    background-color:var(--rose_color_50);
+}
+.desserts .container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 10px;
+}
+@media(max-width:1199px){
+    .desserts .container{
+        flex-direction: column;
+    }
+}
+.desserts .container .products{
+    flex-grow: 1;
+   
+}
+.desserts .container .products .box{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    max-width: 100%;
+
+}
+.desserts .container .products .box img{
+    width: 100%;
+    border-radius: 8px;
+ 
+
+}
+.desserts .container .products .box .tool{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desserts .container .products .box .tool button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    border-radius: 20px;
+    background-color: var(--rose_color_50);
+    font-size: 10px;
+    font-weight: bold;
+    border-color: var(--red_color);
+    border: 1px solid;
+    background-color: white;
+    position: relative;
+    top: -13px;
+    transition-duration: .5s;
+}
+.desserts .container .products .box .tool button .left,
+.desserts .container .products .box .tool button .right{
+    color: transparent;
+    font-size: 16px;
+}
+.desserts .container .products .box .tool button .left{
+    
+    justify-content:left;
+    position: relative;
+    left: -100px;
+}
+.desserts .container .products .box .tool button .left span,
+.desserts .container .products .box .tool button .right span{
+  position: relative;
+  top: -2px;
+}
+.desserts .container .products .box .tool button .right{
+ 
+    justify-content:right;
+    position: relative;
+    left: 20px;
+}
+.desserts .container .products .box .tool button:hover{
+    background-color:var(--red_color);
+    color: var(--red_color);
+  
+}
+.desserts .container .products .row .box:hover  .image{
+    border: 2px solid var(--red_color);
+    color: green;
+}
+.desserts .container .products .box .tool button:hover .left,
+.desserts .container .products .box .tool button:hover .right{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%; 
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.desserts .container .products .box .tool button .middle span{
+    color: transparent;
+}
+.desserts .container .products .box .tool button:hover .middle span{
+    color: white;
+    position: relative;
+    left: -40px;
+}
+.desserts .container .products .box .tool button .left:hover,
+.desserts .container .products .box .tool button .right:hover{
+    background-color: white;
+    color: black;
+}
+
+.desserts .container .products .box .tool button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+   
+
+}
+.desserts .container .products .box .data{
+    align-self: flex-start;
+   
+    margin-bottom: 10px;
+    
+}
+@media(max-width:576px){
+    .desserts .container .products .box .data{
+        /* margin-top: -35px; */
+    
+      
+    }
+}
+   
+.desserts .container .products .box .data span:first-child{
+color: var(--rose_color_300);
+font-size: 13px;
+}
+.desserts .container .products .box .data h3{
+font-size: 16px;
+margin-bottom: 0;
+}
+.desserts .container .products .box .data span{
+    color: var(--red_color);
+    font-weight: bold;
+    margin-top: 0;
+    
+}
+
+.desserts .cart{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: white;
+   margin-left: 20px;
+  border: 2px solid  #eee;
+  border-radius: 8px;
+  padding: 10px 35px;
+  height: fit-content;
+  /* display: none !important; */
+
+ 
+}
+@media(min-width:1023px){
+    .desserts .cart{
+        width:45%;
+    }
+}
+@media(max-width:1022px){
+    .desserts .cart{
+        max-width:30%;
+    }
+}
+@media(min-width:577px) and (max-width:963px){
+    .desserts .cart{
+        max-width:50% !important;
+      
+    }
+}
+@media(min-width:576px){
+    .desserts .cart{
+        max-width:100% !important;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width:575px){
+    .desserts .cart{
+        max-width:100% !important;
+        display: flex;
+        align-items: center;
+    
+    }
+}
+.desserts .empty{
+    max-width: 90%;
+    min-height: 100%;
+    display: block !important;
+  
+}
+@media(max-width:576px){
+    .desserts .empty{
+     position: relative;
+     left: -50px;
+    font-size: 10px;
+   width: 100% !important;
+ 
+    }
+}
+
+.desserts .cart .heading,
+.desserts .empty .heading{
+    align-self: start;
+   
+}
+.desserts .cart .heading h2,
+.desserts .empty .heading h2{
+   color: var(--red_color);
+   text-align: left;
+   font-size: 16px;
+}
+
+    /* width: fit-content; */
+
+.desserts .cart .selecte-items{
+   
+    padding: 10px;
+}
+.desserts .cart .selecte-items .row{
+    border-bottom:  1px solid #eeee;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ 
+}
+.desserts .cart .selecte-items .row .text h4{
+    font-size: 16px;
+}   
+.desserts .cart .selecte-items .row .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desserts .cart .selecte-items .row .bottom .left span:first-child{
+    color: var(--red_color);
+    margin-right: 10px;
+}
+.desserts .cart .selecte-items .row .bottom .left  span{
+    color: var(--rose_color_300);
+    font-size: 13px;
+   
+}
+.desserts .cart .selecte-items .row .bottom .left span:nth-child(3){
+    margin-left: 20px;
+    text-align: center;
+    
+}
+.desserts .cart .selecte-items .row .bottom  button{
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid var(--rose_color_300);
+    background-color: transparent;
+    width: 10px;
+  
+    height:10px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
+.desserts .cart .selecte-items .row .bottom  button:hover{
+    border-color: brown;
+    color: brown;
+}
+
+.desserts .empty{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 40px;
+   border: 2px solid  #eee;
+   border-radius: 8px;
+   padding: 10px 35px;
+   height: fit-content;
+   /* display: none !important; */
+
+}
+
+.desserts .empty .body{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desserts .empty .text h4{
+    font-size: 10px;
+    text-wrap: nowrap;
+    font-weight: bold;
+    color: var(--rose_color_400);
+    text-align: center;
+}
+
+@media (max-width:345px){
+    .desserts .empty .text h4{
+        /* font-size: 8px; */
+        text-wrap: wrap;
+    }
+}
+.details .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details .total h6{
+    font-size: 13px;
+    color: var(--rose_color_300);
+}
+.details .total h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.details .note{
+    background-color: var(--rose_color_100);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media(min-width:577px) and (max-width:963px){
+  
+    .details .note{
+        justify-content: center;
+    }
+}
+
+@media(min-width:200px){
+    .details .note{
+        justify-content: center;
+    }
+}
+
+
+
+.details .note img{
+    margin-top: -10px;
+}
+.details .note h3{
+    font-size: 12px;
+}
+@media(max-width:575px){
+    .details .note h3{
+        font-size: 8px;
+        text-wrap: nowrap;
+    }
+}
+.details .note h3 span{
+    font-weight: bold;
+    
+}
+
+@media(max-width:575px){
+    .details .note h3{
+        font-size: 8px;
+    }
+}
+.details .confirm{
+    border-radius: 20px;
+    padding: 8px 50px;
+    margin-bottom: 20px;
+    background-color:var(--red_color);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+  
+}
+
+
+@media(min-width:577px) and (max-width:963px){
+  
+    .details .confirm{
+        width:100% !important;
+      
+    }
+}
+
+@media(min-width:576px){
+    .details .confirm{
+        width: 100% !important;
+    }
+}
+@media(max-width:575px){
+    .details .confirm{
+        width: 100% !important;
+        font-size: 8px;
+        text-wrap: nowrap;
+        padding-left: 35px;
+     
+    }
+}
+.details .confirm:hover{
+    background-color: brown;
+}
+
+.desserts .container .confirm_message{
+    position: fixed;
+    top:50%;
+    left: 59%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    border:  1px solid #eee;
+    border-radius: 8px;
+    width: 35%;
+    display: none !important;
+}
+.desserts .container .confirm_message.show{
+    display: block !important;
+}
+@media (max-width:1199px){
+   
+    .desserts .container .confirm_message{
+        width: 100%;
+        height: 90%;
+       margin-left:-11%;
+    }
+}
+.desserts .container .confirm_message .top .icon{
+    border-radius: 50%;
+    border: 2px solid;
+    width: 30px;
+    height: 30px;
+    border-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.desserts .container .confirm_message .top .icon svg{
+  color:green;
+}
+.desserts .container .confirm_message .top .text h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.desserts .container .confirm_message .top .text h6{
+font-size: 10px;
+color: var(--rose_color_300);
+}
+.desserts .container .confirm_message .items{
+    background-color: var(--rose_color_50);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.desserts .container .confirm_message .items .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.desserts .container .confirm_message .items .row .left{
+    width: fit-content;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+.desserts .container .confirm_message .items .row .left .image img{
+    width: 40px;
+    height: 40px;
+}
+
+.desserts .container .confirm_message .items .row .left .details{
+    margin-left: 15px;
+}
+.desserts .container .confirm_message .items .row .left .details h6{
+    margin-bottom: 5px;
+}
+.desserts .container .confirm_message .items .row .left .details span:first-of-type{
+    color: var(--red_color);
+   
+
+}
+.desserts .container .confirm_message .items .row .left .details span:last-child{
+    color: var(--rose_color_300 );
+    margin-left: 20px;
+    
+}
+.desserts .container .confirm_message .items .row .right{
+   
+    width: fit-content;
+}
+
+.desserts .container .confirm_message .items .sum{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.desserts .container .confirm_message .items .sum h6{
+    font-size: 10px;
+}
+.desserts .container .confirm_message .items .sum h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.desserts .container .confirm_message .tool{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desserts .container .confirm_message .tool button{
+    border: none;
+    background-color: var(--red_color);
+    color: white;
+    border-radius: 20px;
+    width: 80%;
+    padding: 10px;
+
+}
+.desserts .container .confirm_message .tool button:hover{
+    background-color: brown;
+}
+

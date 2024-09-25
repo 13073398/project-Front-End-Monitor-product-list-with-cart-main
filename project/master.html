@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-list-with-cart</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css.map">
+</head>
+<body>
+   <div class="desserts">
+  
+    <div class="container">
+        <div class="confirm_message">
+            <div class="top">
+                <div class="icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="text">
+                    <h4>Order Confirmed</h4>
+                    <h6>We hope enjoy your Food!</h6>
+                </div>
+            </div>
+            <div class="items">
+                <!-- <div class="row">
+                    <div class="left">
+                        <div class="image">
+                            <img src="../assets/images/image-waffle-desktop.jpg" alt="image">
+                        </div>
+                        <div class="details">
+                            <h6>Waffle</h6>
+                            <span>1*  </span><span>@$5.50</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>$5.50</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <div class="image">
+                            <img src="../assets/images/image-waffle-desktop.jpg" alt="image">
+                        </div>
+                        <div class="details">
+                            <h6>Waffle</h6>
+                            <span>1*</span><span>@$5.50</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>$5.50</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <div class="image">
+                            <img src="../assets/images/image-waffle-desktop.jpg" alt="image">
+                        </div>
+                        <div class="details">
+                            <h6>Waffle</h6>
+                            <span>1*  </span><span>@$5.50</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h6>$5.50</h6>
+                    </div>
+                </div> -->
+                <div class="sum">
+                    <h6>Order total</h6>
+                    <h2>$46.50</h2>
+                </div>
+            </div>
+            <div class="tool">
+                <button>Start New Order </button>
+            </div>
+        </div>
+        <div class="products">  
+            <h2> Desserts</h2>
+            <div class="row">   
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                   <div class="box">
+                    <div class="image">
+                        <img src="../assets/images/image-waffle-desktop.jpg" alt="image"  data-id="1">
+                    </div>
+                    <div class="tool">
+                        <button>
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                            <span>Add to Cart</span>
+                            <div class="left" ><span data-id="1">-</span></div>
+                            <div class="middle"><span data-id="1">0</span></div>
+                            <div class="right" ><span data-id="1">+</span></div>
+                            
+                        </button>
+                    </div>
+                    <div class="data">
+                        <span class="category" data-id="1">Waffle</span>
+                        <h3 data-id="1">Waffle with Berries</h3>
+                        <span class="price" data-id="1">$6.50</span>
+                    </div>
+                   </div>
+               
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                     <div class="image">
+                         <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="2">
+                     </div>
+                     <div class="tool">
+                         <button>
+                
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+
+                            
+                             <span>Add to Cart</span>
+                             <div class="left" ><span data-id="2">-</span></div>
+                             <div class="middle" ><span data-id="2">0</span></div>
+                             <div class="right" ><span data-id="2">+</span></div>
+                         </button>
+                     </div>
+                     <div class="data">
+                         <span class="category" data-id="2">Waffle</span>
+                         <h3 data-id="2"> Waffle with Berries</h3>
+                         <span class="price" data-id="2">$6.50</span>
+                     </div>
+                    </div> 
+                 </div>
+                 <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                     <div class="image">
+                         <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="3">
+                     </div>
+                     <div class="tool">
+                         <button>
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                             <span>Add to Cart</span>
+                             <div class="left"><span data-id="3">-</span></div>
+                             <div class="middle"><span data-id="3">0</span></div>
+                             <div class="right"><span data-id="3">+</span></div>
+                         </button>
+                     </div>
+                     <div class="data">
+                         <span class="category" data-id="3">Waffle</span>
+                         <h3 data-id="3"> Waffle with Berries</h3>
+                         <span class="price" data-id="3">$6.50</span>
+                     </div>
+                    </div>
+                
+                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                   <div class="box">
+                    <div class="image">
+                        <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="4">
+                    </div>
+                    <div class="tool">
+                        <button>
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                            <span>Add to Cart</span>
+                            <div class="left"><span data-id="4">-</span></div>
+                            <div class="middle"><span data-id="4">0</span></div>
+                            <div class="right"><span data-id="4">+</span></div>
+                            
+                        </button>
+                    </div>
+                    <div class="data">
+                        <span class="category"  data-id="4">Waffle</span>
+                        <h3  data-id="4"> Waffle with Berries</h3>
+                        <span class="price"  data-id="4">$6.50</span>
+                    </div>
+                   </div>
+               
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                     <div class="image">
+                         <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="5">
+                     </div>
+                     <div class="tool">
+                         <button>
+                
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                             <span>Add to Cart</span>
+                             <div class="left"><span data-id="5">-</span></div>
+                             <div class="middle"><span  data-id="5">0</span></div>
+                             <div class="right"><span data-id="5">+</span></div>
+                         </button>
+                     </div>
+                     <div class="data">
+                         <span class="category" data-id="5">Waffle</span>
+                         <h3 data-id="5"> Waffle with Berries</h3>
+                         <span class="price" data-id="5">$6.50</span>
+                     </div>
+                    </div>
+                
+                 </div>
+                 <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                     <div class="image">
+                         <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="6">
+                     </div>
+                     <div class="tool">
+                         <button>
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                             <span>Add to Cart</span>
+                             <div class="left"><span data-id="6">-</span></div>
+                             <div class="middle"><span data-id="6">0</span></div>
+                             <div class="right"><span data-id="6">+</span></div>
+                         </button>
+                     </div>
+                     <div class="data">
+                         <span class="category" data-id="6">Waffle</span>
+                         <h3 data-id="6"> Waffle with Berries</h3>
+                         <span class="price" data-id="6">$6.50</span>
+                     </div>
+                    </div>
+                
+                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                   <div class="box">
+                    <div class="image">
+                        <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="7">
+                    </div>
+                    <div class="tool">
+                        <button>
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                            <span>Add to Cart</span>
+                            <div class="left"><span data-id="7">-</span></div>
+                            <div class="middle"><span data-id="7">0</span></div>
+                            <div class="right"><span data-id="7">+</span></div>
+                        </button>
+                    </div>
+                    <div class="data">
+                        <span class="category" data-id="7">Waffle</span>
+                        <h3 data-id="7"> Waffle with Berries</h3>
+                        <span class="price" data-id="7">$6.50</span>
+                    </div>
+                   </div>
+               
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                     <div class="image">
+                         <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="8">
+                     </div>
+                     <div class="tool">
+                         <button>
+                
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                             <span>Add to Cart</span>
+                             <div class="left"><span data-id="8">-</span></div>
+                             <div class="middle"><span data-id="8">0</span></div>
+                             <div class="right"><span data-id="8">+</span></div>
+                         </button>
+                     </div>
+                     <div class="data">
+                         <span class="category" data-id="8">Waffle</span>
+                         <h3 data-id="8"> Waffle with Berries</h3>
+                         <span class="price" data-id="8">$6.50</span>
+                     </div>
+                    </div>
+                
+                 </div>
+                 <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="box">
+                     <div class="image">
+                         <img src="../assets/images/image-waffle-desktop.jpg" alt="image" data-id="9">
+                     </div>
+                     <div class="tool">
+                         <button>
+                            <img src="../assets/images/icon-add-to-cart.svg" alt="image">
+                             <span>Add to Cart</span>
+                             <div class="left"><span data-id="9">-</span></div>
+                             <div class="middle"><span data-id="9">0</span></div>
+                             <div class="right"><span data-id="9">+</span></div>
+                         </button>
+                     </div>
+                     <div class="data">
+                         <span class="category"data-id="9" >Waffle</span>
+                         <h3 data-id="9"> Waffle with Berries</h3>
+                         <span class="price" data-id="9">$6.50</span>
+                     </div>
+                    </div>
+                
+                 </div>
+            </div>
+        </div>
+        <div class="cart disable">
+            <div class="heading">
+                <h2></h2>
+            </div>
+            <div class="details">
+                <div class="selecte-items">
+                   
+                    <!-- <div class="row">
+                        <div class="text">
+                            <h4>Waffle</h4>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <span>1*</span> <span>$6.50</span><span>$6.50</span>
+                               
+                            </div>
+                            <div class="right">
+                                <div class="icon"><button>X</button></div>
+                            </div>
+                        </div>
+                       
+                       
+                      
+                    </div>
+                    <div class="row">
+                       
+                        <div class="text">
+                            <h4>Waffle</h4>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <span>1*</span> <span>$6.50</span><span>$6.50</span>
+                               
+                            </div>
+                            <div class="right">
+                                <div class="icon"><button>X</button></div>
+                            </div>
+                        </div>
+                       
+                       
+                      
+                    </div>
+                    <div class="row">
+                       
+                        <div class="text">
+                            <h4>Waffle</h4>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <span>1*</span> <span>$6.50</span><span>$6.50</span>
+                               
+                            </div>
+                            <div class="right">
+                                <div class="icon"><button>X</button></div>
+                            </div>
+                        </div>
+                       
+                       
+                      
+                    </div> -->
+                   
+                </div>
+               <div class="total">
+                <h6>Order Total</h6>
+                <h3>0</h3>
+               </div>
+               <div class="note">
+                <img src="../assets/images/icon-carbon-neutral.svg"></img>
+                <h3>this is <span>carbon-neutral</span>delivery</h3>
+               </div>
+               <button class="confirm">Confirm order</button>
+            </div>
+        </div>
+        <div class="empty">
+            <div class="heading">
+                <h2>Your cart(0)</h2>
+              
+            </div>
+            <div class="body">
+                <img src="../assets/images/illustration-empty-cart.svg">
+            </div>
+            <div class="text">
+                <h4>Your added iteme will appear here</h4>
+            </div>
+        </div>
+    </div>
+   </div>
+
+ <script src="java/master.js"></script>
+ <script src="java/bootstrap.min.js"></script>
+ <script src="java/all.min.js"></script>
+ 
+</body>
+</html>
